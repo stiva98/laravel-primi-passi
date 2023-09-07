@@ -15,16 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('/contatti.blade.php', function () {
+Route::get('/contatti', function () {
     return view('contatti');
-});
+})->name('contatti');
 
-Route::get('/chi_siamo.blade.php', function () {
+Route::get('/chi_siamo', function () {
     return view('chi_siamo');
-});
+})->name('chi_siamo');
 
-Route::get('/documentazione.blade.php', function () {
+Route::get('/documentazione', function () {
     return view('documentazione');
-});
+})->name('documentazione');
